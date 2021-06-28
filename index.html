@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>The Visualizers</title>
+  </head>
+  <body>
+    <div class="section1">
+      <div id="text">Sorting Visualizer</div>
+      <section>
+        <button id="newArray">New Array</button>
+        <div id="range">
+          <span
+            >Size
+            <input
+              id="size"
+              type="range"
+              min="6"
+              max="200"
+              stepdown="10"
+              value="60"
+            />
+            <span>Speed</span>
+            <input
+              id="speed"
+              type="range"
+              min="-500"
+              max="500"
+              stepdown="10"
+              value="60"
+            />
+          </span>
+        </div>
+        <button id="bubArray">Bubble Sort</button>
+        <button id="selArray">Selection Sort</button>
+        <button id="merArray">Merge Sort</button>
+        <button id="quickArray">Quick Sort</button>
+      </section>
+      <div id="bars"></div>
+      <script src="index.js"></script>
+    </div>
+    <div class="section2">
+      <div class="controls">
+        <div id="text">Maze Generator</div>
+        <button onclick="maze()">Start</button>
+        <input
+          id="speedSection2"
+          type="range"
+          min="10"
+          max="100"
+          stepdown="1"
+          value="30"
+        />
+      </div>
+      <canvas height="600" width="1200"></canvas>
+      <script src="index2.js"></script>
+    </div>
+    <div class="section3">
+      <div class="buttonSection3">
+        <div id="text">Path Finder</div>
+        <button id="check">Check</button>
+        <button id="reset">Reset</button>
+      </div>
+      <div id="gridSection3"></div>
+      <script src="index3.js"></script>
+    </div>
+  </body>
+</html>
